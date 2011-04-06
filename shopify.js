@@ -129,17 +129,3 @@ var Product = Shopify.Product = function(shop, data) {
 // Exports
 
 exports.Shopify = Shopify;
-
-
-
-// IMPLEMENTATION
-
-// var Shopify = require('shopify').Shopify;
-
-Shopify.API_KEY = 'eaea2966fe371020932af90a1b30b32d';
-Shopify.PASSWORD = 'b184e10e0aef14bed5f6434369d4fa5c';
-
-var shop = new Shopify.Shop('nicksmall');
-shop.orders(function(err, orders) {
-    console.log(orders[0].name, orders[0].line_items);
-});
